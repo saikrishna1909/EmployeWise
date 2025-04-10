@@ -1,70 +1,156 @@
-# Getting Started with Create React App
+EmployeeWise – User Management App
+EmployeeWise is a React-based web application that integrates with the Reqres API to perform user authentication, listing, editing, and deletion. This application is built in levels to demonstrate frontend skills and API integration capabilities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📚 Table of Contents
+Tech Stack
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Installation and Setup
 
-### `npm start`
+Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+App Flow
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Styling
 
-### `npm test`
+Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+License
 
-### `npm run build`
+Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contact
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚙️ Tech Stack
+React.js – Frontend framework
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Bootstrap – UI components & responsive layout
 
-### `npm run eject`
+Axios – API communication
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React Router DOM – Routing management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React Toastify – User-friendly alert notifications
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Reqres API – Dummy API for user management
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 Features
+Level 1: Authentication
+Login with valid credentials using POST /api/login
 
-## Learn More
+Stores returned token in localStorage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Redirects to All Users page on success
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Level 2: Paginated User List
+Fetches users using GET /api/users?page=1
 
-### Code Splitting
+Responsive card layout displaying name, email, and avatar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Pagination implemented with forward/backward navigation
 
-### Analyzing the Bundle Size
+Lazy-loading behavior for smooth transitions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Level 3: Edit/Delete Users
+Edit button opens a pre-filled form to update name/email
 
-### Making a Progressive Web App
+Update via PUT /api/users/{id}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Delete any user with DELETE /api/users/{id}
 
-### Advanced Configuration
+Success/error feedback using toast notifications
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Automatically fills deleted slots with next-page users
 
-### Deployment
+💻 Installation and Setup
+bash
+Copy
+Edit
+git clone https://github.com/saikrishna1909/EmployeWise.git
+cd EmployeWise
+npm install
+npm start
+🗂️ Project Structure
+pgsql
+Copy
+Edit
+EmployeWise/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   └── components/
+│       ├── Context/
+│       │   └── UserContext.js
+│       ├── AllUsers/
+│       │   └── AllUsers.js
+│       ├── UserDetails/
+│       │   └── UserDetails.js
+│       └── UserLogin/
+│           ├── UserLogin.js
+│           └── UserLogin.css
+├── package.json
+└── README.md
+🔁 App Flow
+Login
+User enters email & password → hits API → stores token → redirects to AllUsers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+User Listing
+Displays paginated users with avatars and emails. Supports forward/back navigation.
 
-### `npm run build` fails to minify
+Edit/Delete
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Edit opens form → pre-fills data → updates user with success toast.
+
+Delete removes user from list and shifts remaining users forward.
+
+🎨 Styling
+Responsive design using Bootstrap & custom CSS
+
+Toast notifications for all user interactions
+
+Card layout for user display
+
+🌐 Deployment
+This app can be deployed using:
+
+Netlify
+
+Vercel
+
+GitHub Pages
+
+✅ Netlify Deployment Steps
+Push your code to GitHub
+
+Login to Netlify and click "New Site from Git"
+
+Connect your GitHub repo
+
+Set build command: npm run build
+
+Set publish directory: build/
+
+Deploy your site 🎉
+
+📜 License
+This project is licensed under the MIT License. Feel free to use, modify, and distribute.
+
+🤝 Contributing
+Contributions are welcome!
+
+Fork the repository
+
+Create a new branch
+
+Make changes and test thoroughly
+
+Submit a pull request
+
+📬 Contact
+📧 Email: kondasaikrishna13@gmail.com
+
+💻 GitHub: saikrishna1909
+
