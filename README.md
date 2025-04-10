@@ -1,7 +1,7 @@
-EmployeeWise – User Management App
+### EmployeeWise – User Management App
 EmployeeWise is a React-based web application that integrates with the Reqres API to perform user authentication, listing, editing, and deletion. This application is built in levels to demonstrate frontend skills and API integration capabilities.
 
-📚 Table of Contents
+### 📚 Table of Contents
 Tech Stack
 
 Features
@@ -22,7 +22,7 @@ Contributing
 
 Contact
 
-⚙️ Tech Stack
+##⚙️ Tech Stack
 React.js – Frontend framework
 
 Bootstrap – UI components & responsive layout
@@ -35,15 +35,15 @@ React Toastify – User-friendly alert notifications
 
 Reqres API – Dummy API for user management
 
-🚀 Features
-Level 1: Authentication
+### 🚀 Features
+## Level 1: Authentication
 Login with valid credentials using POST /api/login
 
 Stores returned token in localStorage
 
 Redirects to All Users page on success
 
-Level 2: Paginated User List
+## Level 2: Paginated User List
 Fetches users using GET /api/users?page=1
 
 Responsive card layout displaying name, email, and avatar
@@ -52,7 +52,7 @@ Pagination implemented with forward/backward navigation
 
 Lazy-loading behavior for smooth transitions
 
-Level 3: Edit/Delete Users
+## Level 3: Edit/Delete Users
 Edit button opens a pre-filled form to update name/email
 
 Update via PUT /api/users/{id}
@@ -63,7 +63,7 @@ Success/error feedback using toast notifications
 
 Automatically fills deleted slots with next-page users
 
-💻 Installation and Setup
+### 💻 Installation and Setup
 bash
 Copy
 Edit
@@ -71,7 +71,8 @@ git clone https://github.com/saikrishna1909/EmployeWise.git
 cd EmployeWise
 npm install
 npm start
-🗂️ Project Structure
+
+### 🗂️ Project Structure
 pgsql
 Copy
 Edit
@@ -93,27 +94,28 @@ EmployeWise/
 │           └── UserLogin.css
 ├── package.json
 └── README.md
-🔁 App Flow
-Login
+
+### 🔁 App Flow
+## Login
 User enters email & password → hits API → stores token → redirects to AllUsers.
 
-User Listing
+## User Listing
 Displays paginated users with avatars and emails. Supports forward/back navigation.
 
-Edit/Delete
+## Edit/Delete
 
 Edit opens form → pre-fills data → updates user with success toast.
 
 Delete removes user from list and shifts remaining users forward.
 
-🎨 Styling
+## 🎨 Styling
 Responsive design using Bootstrap & custom CSS
 
 Toast notifications for all user interactions
 
 Card layout for user display
 
-🌐 Deployment
+## 🌐 Deployment
 This app can be deployed using:
 
 Netlify
@@ -135,10 +137,10 @@ Set publish directory: build/
 
 Deploy your site 🎉
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute.
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome!
 
 Fork the repository
@@ -149,8 +151,8 @@ Make changes and test thoroughly
 
 Submit a pull request
 
-📬 Contact
-📧 Email: kondasaikrishna13@gmail.com
+## 📬 Contact
+## 📧 Email: kondasaikrishna13@gmail.com
 
-💻 GitHub: saikrishna1909
+## 💻 GitHub: saikrishna1909
 
