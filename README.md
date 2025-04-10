@@ -73,9 +73,6 @@ npm install
 npm start
 
 ### 🗂️ Project Structure
-pgsql
-Copy
-Edit
 EmployeWise/
 ├── public/
 │   └── index.html
